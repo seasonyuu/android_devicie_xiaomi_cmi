@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.powershare@1.0-service.xiaomi_kona",
-    init_rc: ["lineage.powershare@1.0-service.xiaomi_kona.rc"],
+    name: "mokee.powershare@1.0-service.xiaomi_kona",
+    init_rc: ["mokee.powershare@1.0-service.xiaomi_kona.rc"],
     srcs: ["service.cpp", "PowerShare.cpp"],
     shared_libs: [
         "libbase",
@@ -27,6 +27,6 @@ cc_binary {
         "liblog",
         "libhwbinder",
         "libutils",
-        "vendor.lineage.powershare@1.0",
+        "vendor.mokee.powershare@1.0",
     ],
 }

@@ -1,3 +1,10 @@
+# Audio
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    audio.offload.min.duration.secs=30 \
+    persist.vendor.audio.hac.enable=false \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
+    qcom.hw.aac.encoder=true
+
 # Bluetooth
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
@@ -36,8 +43,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
-    media.settings.xml=/system/etc/media_profiles_vendor.xml \
-    vendor.mm.enable.qcom_parser=131071999
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -68,6 +74,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=1
+
+# Screen
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=440 \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \

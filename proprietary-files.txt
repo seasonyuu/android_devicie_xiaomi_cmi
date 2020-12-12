@@ -1,3 +1,6 @@
+# Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+
 # ANT+
 -lib/libantradio.so
 -lib64/libantradio.so
@@ -5,8 +8,8 @@ product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|103050f9bc24269305dbd7f1d57d76512b277eca
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|57189068f3843419c2f16e22732ae16afddca0cb
 
 # CNE
 etc/cne/Nexus/ATT/ATT_profiles.xml
@@ -81,21 +84,16 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Telephony
-etc/permissions/privapp-permissions-qti.xml
-etc/permissions/qti_libpermissions.xml
-etc/permissions/qti_permissions.xml
-etc/sysconfig/qti_whitelist.xml
--product/app/QtiTelephonyService/QtiTelephonyService.apk
-product/etc/permissions/qcrilhook.xml
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
-product/etc/permissions/telephonyservice.xml
-product/framework/qcrilhook.jar
-product/framework/QtiTelephonyServicelibrary.jar
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
 
 # Modules
 vendor/lib/modules/audio_adsp_loader.ko:product/vendor_overlay/29/lib/modules/audio_adsp_loader.ko
@@ -151,6 +149,93 @@ product/lib/vendor.qti.hardware.perf@2.0.so
 
 # QAS_DVC_MSP
 -product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
+product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
+
+# Sensors configs
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/bmp285_0.json
+vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/sm8250_ak991x_0.json
+vendor/etc/sensors/config/sm8250_bmp285_0.json
+vendor/etc/sensors/config/sm8250_lsm6dso_0.json
+vendor/etc/sensors/config/sm8250_power_0.json
+vendor/etc/sensors/config/sm8250_sx933x_0.json
+vendor/etc/sensors/config/sm8250_tcs3408.json
+vendor/etc/sensors/config/sm8250_tcs3701.json
+vendor/etc/sensors/config/sm8250_vl53l1_tof_0.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
+vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_aod.json
+vendor/etc/sensors/config/sns_aont.json
+vendor/etc/sensors/config/sns_ccd_v2_walk.json
+vendor/etc/sensors/config/sns_ccd_v3_walk.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_mag_cal_legacy.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_nonui.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_sar_algo.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_wrist_pedo.json
+vendor/etc/sensors/config/sx933x_0.json
+vendor/etc/sensors/config/tcs3408.json
+vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/config/vl53l1_tof_0.json
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sns_reg_config
+
+# Soter
+-vendor/app/SoterService/SoterService.apk
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
+# Telephony
+etc/permissions/privapp-permissions-qti.xml
+etc/permissions/qti_libpermissions.xml
+etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+product/etc/permissions/telephonyservice.xml
+product/framework/qcrilhook.jar
+product/framework/QtiTelephonyServicelibrary.jar
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
+product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
+
+# Thermal configs
+vendor/etc/thermal-4k.conf
+vendor/etc/thermal-8k.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermald-devices.conf
 
 # WiFi Display
 bin/wfdservice

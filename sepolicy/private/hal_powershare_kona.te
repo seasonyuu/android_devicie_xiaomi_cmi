@@ -1,5 +1,5 @@
 type hal_powershare_kona, coredomain, domain;
-hal_server_domain(hal_powershare_kona, hal_lineage_powershare)
+hal_server_domain(hal_powershare_kona, hal_mokee_powershare)
 
 type hal_powershare_kona_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_powershare_kona)

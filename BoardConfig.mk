@@ -48,11 +48,6 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_OTA_ASSERT_DEVICE := cmi
 
 # Audio
-AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
-AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
-AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
-AUDIO_FEATURE_ENABLED_HDMI_SPK := true
-AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
@@ -90,11 +85,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.kona
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -180,6 +173,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+# Neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
@@ -188,10 +184,10 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
-
-# Screen
-TARGET_SCREEN_DENSITY := 420
+    device/qcom/sepolicy/qva/public \
+    $(DEVICE_PATH)/sepolicy/public
+BOARD_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true

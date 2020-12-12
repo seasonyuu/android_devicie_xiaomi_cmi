@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
-#define VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#ifndef VENDOR_MOKEE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#define VENDOR_MOKEE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 
-#include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
+#include <vendor/mokee/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 #include <vendor/xiaomi/hardware/displayfeature/1.0/IDisplayFeature.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
 #include <vendor/xiaomi/hardware/touchfeature/1.0/ITouchFeature.h>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -38,7 +38,7 @@ using ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint
 using ::vendor::xiaomi::hardware::touchfeature::V1_0::ITouchFeature;
 
 class FingerprintInscreen : public IFingerprintInscreen {
-  public:
+public:
     FingerprintInscreen();
     Return<int32_t> getPositionX() override;
     Return<int32_t> getPositionY() override;
@@ -56,9 +56,9 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<bool> shouldBoostBrightness() override;
     Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
 
-  private:
-    sp<ITouchFeature> TouchFeatureService;
+private:
     sp<IDisplayFeature> xiaomiDisplayFeatureService;
+    sp<ITouchFeature> touchFeatureService;
     sp<IXiaomiFingerprint> xiaomiFingerprintService;
 };
 
@@ -67,7 +67,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#endif  // VENDOR_MOKEE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H

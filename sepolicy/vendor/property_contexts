@@ -1,0 +1,3 @@
+
+# Mlipay
+persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0

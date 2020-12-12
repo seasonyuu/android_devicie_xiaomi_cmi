@@ -1,0 +1,9 @@
+
+# Executables
+/vendor/bin/mlipayd@1\.1                      u:object_r:hal_mlipay_default_exec:s0
+
+# Files in rootfs
+/bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
+/dsp(/.*)?               u:object_r:adsprpcd_file:s0
+/firmware(/.*)?          u:object_r:firmware_file:s0
+/persist(/.*)?           u:object_r:persist_file:s0

@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
-#define VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
+#ifndef VENDOR_MOKEE_POWERSHARE_V1_0_POWERSHARE_H
+#define VENDOR_MOKEE_POWERSHARE_V1_0_POWERSHARE_H
 
-#include <vendor/lineage/powershare/1.0/IPowerShare.h>
+#include <vendor/mokee/powershare/1.0/IPowerShare.h>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace powershare {
 namespace V1_0 {
 namespace implementation {
@@ -39,7 +39,7 @@ class PowerShare : public IPowerShare {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace powershare
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
+#endif  // VENDOR_MOKEE_POWERSHARE_V1_0_POWERSHARE_H

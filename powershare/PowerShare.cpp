@@ -21,7 +21,7 @@
 #include <fstream>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace powershare {
 namespace V1_0 {
 namespace implementation {
@@ -75,5 +75,5 @@ Return<uint32_t> PowerShare::setMinBattery(uint32_t) {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace powershare
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor

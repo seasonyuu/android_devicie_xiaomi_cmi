@@ -1,4 +1,4 @@
-Copyright (C) 2020 The PixelExperience Project
+Copyright (C) 2020 The MoKee Open Source Project
 
 Device configuration for Xiaomi MI 10 Pro
 =========================================
@@ -15,7 +15,7 @@ SoC     | Qualcomm SDM865 Snapdragon 865
 CPU     | Octa-core (2.84 GHz Kryo 485 & 2.42GHz Kryo 485 & 1.8GHz Kryo 485)
 GPU     | Adreno 650
 Memory  | 8/12 GB RAM
-Shipped Android Version | 10.0 with MIUI 11
+Shipped Android Version | 10.0
 Storage | 256/512 GB
 Battery | Non-removable Li-Po 4500 mAh battery
 Display | 1080 x 2340 pixels, 19.5:9 ratio, 6.67 inches, AMOLED HDR10+

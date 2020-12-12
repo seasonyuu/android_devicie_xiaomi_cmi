@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cmi.mk
+    $(LOCAL_DIR)/mokee_cmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cmi-user \
-    aosp_cmi-userdebug \
-    aosp_cmi-eng
+    mokee_cmi-user \
+    mokee_cmi-userdebug \
+    mokee_cmi-eng
