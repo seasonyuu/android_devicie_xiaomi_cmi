@@ -31,7 +31,7 @@
 
 #define FOD_SENSOR_X 441
 #define FOD_SENSOR_Y 1808
-#define FOD_SENSOR_SIZE 197
+#define FOD_SENSOR_SIZE 220
 
 #define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
 
@@ -87,6 +87,7 @@ Return<int32_t> FingerprintInscreen::getDimAmount(int32_t /* brightness */) {
         alpha = 1.0 - pow(realBrightness / 1680.0, 0.455);
     }
 
+    if(alpha < 0.82) alpha+=0.1;
     return 255 * alpha;
 }
 
@@ -104,13 +105,13 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     acquire_wake_lock(PARTIAL_WAKE_LOCK, LOG_TAG);
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
+    // set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+    // set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     release_wake_lock(LOG_TAG);
     return Void();
