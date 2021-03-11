@@ -1,1 +1,1 @@
-user=_app seinfo=platform name=com.google.android.flipendo domain=flipendo type=app_data_file levelFrom=all
+user=system seinfo=platform name=org.mokee.settings domain=xiaomi_settings type=system_app_data_file

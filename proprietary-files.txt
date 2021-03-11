@@ -33,6 +33,26 @@ system_ext/lib64/vendor.display.color@1.2.so
 system_ext/lib64/vendor.display.color@1.3.so
 system_ext/lib64/vendor.display.postproc@1.0.so
 
+# Display (HDR)
+vendor/lib64/libhdr_tm.so
+vendor/lib/libhdr_tm.so
+
+# Display (SDM)
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib/libqseed3.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+
 # DPM
 framework/tcmclient.jar
 system_ext/bin/dpmd
@@ -55,6 +75,63 @@ system_ext/lib64/libdpmtcm.so
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+
+# Modules
+vendor/lib/modules/audio_adsp_loader.ko:product/vendor_overlay/30/lib/modules/audio_adsp_loader.ko
+vendor/lib/modules/audio_apr.ko:product/vendor_overlay/30/lib/modules/audio_apr.ko
+vendor/lib/modules/audio_bolero_cdc.ko:product/vendor_overlay/30/lib/modules/audio_bolero_cdc.ko
+vendor/lib/modules/audio_cs35l41.ko:product/vendor_overlay/30/lib/modules/audio_cs35l41.ko
+vendor/lib/modules/audio_hdmi.ko:product/vendor_overlay/30/lib/modules/audio_hdmi.ko
+vendor/lib/modules/audio_machine_kona.ko:product/vendor_overlay/30/lib/modules/audio_machine_kona.ko
+vendor/lib/modules/audio_mbhc.ko:product/vendor_overlay/30/lib/modules/audio_mbhc.ko
+vendor/lib/modules/audio_native.ko:product/vendor_overlay/30/lib/modules/audio_native.ko
+vendor/lib/modules/audio_pinctrl_lpi.ko:product/vendor_overlay/30/lib/modules/audio_pinctrl_lpi.ko
+vendor/lib/modules/audio_pinctrl_wcd.ko:product/vendor_overlay/30/lib/modules/audio_pinctrl_wcd.ko
+vendor/lib/modules/audio_platform.ko:product/vendor_overlay/30/lib/modules/audio_platform.ko
+vendor/lib/modules/audio_q6.ko:product/vendor_overlay/30/lib/modules/audio_q6.ko
+vendor/lib/modules/audio_q6_notifier.ko:product/vendor_overlay/30/lib/modules/audio_q6_notifier.ko
+vendor/lib/modules/audio_q6_pdr.ko:product/vendor_overlay/30/lib/modules/audio_q6_pdr.ko
+vendor/lib/modules/audio_rx_macro.ko:product/vendor_overlay/30/lib/modules/audio_rx_macro.ko
+vendor/lib/modules/audio_snd_event.ko:product/vendor_overlay/30/lib/modules/audio_snd_event.ko
+vendor/lib/modules/audio_stub.ko:product/vendor_overlay/30/lib/modules/audio_stub.ko
+vendor/lib/modules/audio_swr_ctrl.ko:product/vendor_overlay/30/lib/modules/audio_swr_ctrl.ko
+vendor/lib/modules/audio_swr.ko:product/vendor_overlay/30/lib/modules/audio_swr.ko
+vendor/lib/modules/audio_tfa98xx.ko:product/vendor_overlay/30/lib/modules/audio_tfa98xx.ko
+vendor/lib/modules/audio_tx_macro.ko:product/vendor_overlay/30/lib/modules/audio_tx_macro.ko
+vendor/lib/modules/audio_usf.ko:product/vendor_overlay/30/lib/modules/audio_usf.ko
+vendor/lib/modules/audio_va_macro.ko:product/vendor_overlay/30/lib/modules/audio_va_macro.ko
+vendor/lib/modules/audio_wcd938x.ko:product/vendor_overlay/30/lib/modules/audio_wcd938x.ko
+vendor/lib/modules/audio_wcd938x_slave.ko:product/vendor_overlay/30/lib/modules/audio_wcd938x_slave.ko
+vendor/lib/modules/audio_wcd9xxx.ko:product/vendor_overlay/30/lib/modules/audio_wcd9xxx.ko
+vendor/lib/modules/audio_wcd_core.ko:product/vendor_overlay/30/lib/modules/audio_wcd_core.ko
+vendor/lib/modules/audio_wsa881x.ko:product/vendor_overlay/30/lib/modules/audio_wsa881x.ko
+vendor/lib/modules/audio_wsa_macro.ko:product/vendor_overlay/30/lib/modules/audio_wsa_macro.ko
+vendor/lib/modules/exfat.ko:product/vendor_overlay/30/lib/modules/exfat.ko
+vendor/lib/modules/fragmentize.ko:product/vendor_overlay/30/lib/modules/fragmentize.ko
+vendor/lib/modules/gspca_main.ko:product/vendor_overlay/30/lib/modules/gspca_main.ko
+vendor/lib/modules/lcd.ko:product/vendor_overlay/30/lib/modules/lcd.ko
+vendor/lib/modules/llcc_perfmon.ko:product/vendor_overlay/30/lib/modules/llcc_perfmon.ko
+vendor/lib/modules/modules.alias:product/vendor_overlay/30/lib/modules/modules.alias
+vendor/lib/modules/modules.dep:product/vendor_overlay/30/lib/modules/modules.dep
+vendor/lib/modules/modules.load:product/vendor_overlay/30/lib/modules/modules.load
+vendor/lib/modules/modules.softdep:product/vendor_overlay/30/lib/modules/modules.softdep
+vendor/lib/modules/mpq-adapter.ko:product/vendor_overlay/30/lib/modules/mpq-adapter.ko
+vendor/lib/modules/mpq-dmx-hw-plugin.ko:product/vendor_overlay/30/lib/modules/mpq-dmx-hw-plugin.ko
+vendor/lib/modules/qca_cld3_qca6390.ko:product/vendor_overlay/30/lib/modules/qca_cld3_qca6390.ko
+vendor/lib/modules/qca_cld3_qca6490.ko:product/vendor_overlay/30/lib/modules/qca_cld3_qca6490.ko
+vendor/lib/modules/rdbg.ko:product/vendor_overlay/30/lib/modules/rdbg.ko
+vendor/lib/modules/rmnet_perf.ko:product/vendor_overlay/30/lib/modules/rmnet_perf.ko
+vendor/lib/modules/rmnet_shs.ko:product/vendor_overlay/30/lib/modules/rmnet_shs.ko
+vendor/lib/modules/sla.ko:product/vendor_overlay/30/lib/modules/sla.ko
+
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
 # Qualcomm MSM Interface
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -114,50 +191,25 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.ims.factory@1.0.so
 
-# Modules
-vendor/lib/modules/audio_adsp_loader.ko:product/vendor_overlay/30/lib/modules/audio_adsp_loader.ko
-vendor/lib/modules/audio_apr.ko:product/vendor_overlay/30/lib/modules/audio_apr.ko
-vendor/lib/modules/audio_bolero_cdc.ko:product/vendor_overlay/30/lib/modules/audio_bolero_cdc.ko
-vendor/lib/modules/audio_cs35l41.ko:product/vendor_overlay/30/lib/modules/audio_cs35l41.ko
-vendor/lib/modules/audio_hdmi.ko:product/vendor_overlay/30/lib/modules/audio_hdmi.ko
-vendor/lib/modules/audio_machine_kona.ko:product/vendor_overlay/30/lib/modules/audio_machine_kona.ko
-vendor/lib/modules/audio_mbhc.ko:product/vendor_overlay/30/lib/modules/audio_mbhc.ko
-vendor/lib/modules/audio_native.ko:product/vendor_overlay/30/lib/modules/audio_native.ko
-vendor/lib/modules/audio_pinctrl_lpi.ko:product/vendor_overlay/30/lib/modules/audio_pinctrl_lpi.ko
-vendor/lib/modules/audio_pinctrl_wcd.ko:product/vendor_overlay/30/lib/modules/audio_pinctrl_wcd.ko
-vendor/lib/modules/audio_platform.ko:product/vendor_overlay/30/lib/modules/audio_platform.ko
-vendor/lib/modules/audio_q6.ko:product/vendor_overlay/30/lib/modules/audio_q6.ko
-vendor/lib/modules/audio_q6_notifier.ko:product/vendor_overlay/30/lib/modules/audio_q6_notifier.ko
-vendor/lib/modules/audio_q6_pdr.ko:product/vendor_overlay/30/lib/modules/audio_q6_pdr.ko
-vendor/lib/modules/audio_rx_macro.ko:product/vendor_overlay/30/lib/modules/audio_rx_macro.ko
-vendor/lib/modules/audio_snd_event.ko:product/vendor_overlay/30/lib/modules/audio_snd_event.ko
-vendor/lib/modules/audio_stub.ko:product/vendor_overlay/30/lib/modules/audio_stub.ko
-vendor/lib/modules/audio_swr_ctrl.ko:product/vendor_overlay/30/lib/modules/audio_swr_ctrl.ko
-vendor/lib/modules/audio_swr.ko:product/vendor_overlay/30/lib/modules/audio_swr.ko
-vendor/lib/modules/audio_tfa98xx.ko:product/vendor_overlay/30/lib/modules/audio_tfa98xx.ko
-vendor/lib/modules/audio_tx_macro.ko:product/vendor_overlay/30/lib/modules/audio_tx_macro.ko
-vendor/lib/modules/audio_usf.ko:product/vendor_overlay/30/lib/modules/audio_usf.ko
-vendor/lib/modules/audio_va_macro.ko:product/vendor_overlay/30/lib/modules/audio_va_macro.ko
-vendor/lib/modules/audio_wcd938x.ko:product/vendor_overlay/30/lib/modules/audio_wcd938x.ko
-vendor/lib/modules/audio_wcd938x_slave.ko:product/vendor_overlay/30/lib/modules/audio_wcd938x_slave.ko
-vendor/lib/modules/audio_wcd9xxx.ko:product/vendor_overlay/30/lib/modules/audio_wcd9xxx.ko
-vendor/lib/modules/audio_wcd_core.ko:product/vendor_overlay/30/lib/modules/audio_wcd_core.ko
-vendor/lib/modules/audio_wsa881x.ko:product/vendor_overlay/30/lib/modules/audio_wsa881x.ko
-vendor/lib/modules/audio_wsa_macro.ko:product/vendor_overlay/30/lib/modules/audio_wsa_macro.ko
-vendor/lib/modules/exfat.ko:product/vendor_overlay/30/lib/modules/exfat.ko
-vendor/lib/modules/fragmentize.ko:product/vendor_overlay/30/lib/modules/fragmentize.ko
-vendor/lib/modules/gspca_main.ko:product/vendor_overlay/30/lib/modules/gspca_main.ko
-vendor/lib/modules/lcd.ko:product/vendor_overlay/30/lib/modules/lcd.ko
-vendor/lib/modules/llcc_perfmon.ko:product/vendor_overlay/30/lib/modules/llcc_perfmon.ko
-vendor/lib/modules/modules.alias:product/vendor_overlay/30/lib/modules/modules.alias
-vendor/lib/modules/modules.dep:product/vendor_overlay/30/lib/modules/modules.dep
-vendor/lib/modules/modules.load:product/vendor_overlay/30/lib/modules/modules.load
-vendor/lib/modules/modules.softdep:product/vendor_overlay/30/lib/modules/modules.softdep
-vendor/lib/modules/mpq-adapter.ko:product/vendor_overlay/30/lib/modules/mpq-adapter.ko
-vendor/lib/modules/mpq-dmx-hw-plugin.ko:product/vendor_overlay/30/lib/modules/mpq-dmx-hw-plugin.ko
-vendor/lib/modules/qca_cld3_qca6390.ko:product/vendor_overlay/30/lib/modules/qca_cld3_qca6390.ko
-vendor/lib/modules/qca_cld3_qca6490.ko:product/vendor_overlay/30/lib/modules/qca_cld3_qca6490.ko
-vendor/lib/modules/rdbg.ko:product/vendor_overlay/30/lib/modules/rdbg.ko
-vendor/lib/modules/rmnet_perf.ko:product/vendor_overlay/30/lib/modules/rmnet_perf.ko
-vendor/lib/modules/rmnet_shs.ko:product/vendor_overlay/30/lib/modules/rmnet_shs.ko
-vendor/lib/modules/sla.ko:product/vendor_overlay/30/lib/modules/sla.ko
+# Soter
+# Signed by mokee platform key for "android.uid.system"
+-vendor/app/SoterService/SoterService.apk|829019400a863a322ec0409c466e6c03736faf36
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+
+# Thermal configs
+vendor/etc/thermal-4k.conf
+vendor/etc/thermal-8k.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermald-devices.conf

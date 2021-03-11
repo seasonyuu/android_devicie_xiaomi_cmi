@@ -1,2 +1,2 @@
-vendor.lineage.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_lineage_fod_hwservice:s0
-vendor.lineage.powershare::IPowerShare                                  u:object_r:hal_lineage_powershare_hwservice:s0
+vendor.mokee.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_mokee_fod_hwservice:s0
+vendor.mokee.powershare::IPowerShare                                  u:object_r:hal_mokee_powershare_hwservice:s0

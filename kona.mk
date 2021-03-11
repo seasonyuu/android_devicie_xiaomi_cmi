@@ -31,7 +31,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
+# $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/cmi/cmi-vendor.mk)
@@ -47,8 +47,6 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Board
 TARGET_BOARD_PLATFORM := kona
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-404
 
 # A/B
 AB_OTA_UPDATER := false
@@ -83,6 +81,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbluetooth_qti
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 # Cryptfs
 PRODUCT_PACKAGES += \
     libcryptfs_hw
@@ -93,7 +95,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+    mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+PRODUCT_COPY_FILES += \
+    vendor/mokee/config/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml
 
 # Fstab
 PRODUCT_COPY_FILES += \
@@ -103,6 +107,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+# IFAA manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -123,7 +134,10 @@ PRODUCT_COPY_FILES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/cmi
+    device/xiaomi/cmi \
+    vendor/nxp/opensource/sn100x \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf
 
 # Net
 PRODUCT_PACKAGES += \
@@ -142,19 +156,14 @@ PRODUCT_HOST_PACKAGES += \
     signapk
 
 # Overlays
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
-    WifiOverlay \
-    XiaomiBluetooth \
-    XiaomiFrameworks \
-    XiaomiSystemUI
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-mokee
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
-    FrameworksResCommon \
     FrameworksResTarget \
-    DevicesOverlay \
-    DevicesAndroidOverlay
+    XiaomiFrameworks \
+    XiaomiSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -173,8 +182,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
 
 # PowerShare
-PRODUCT_PACKAGES += \
-    lineage.powershare@1.0-service.xiaomi_kona
+# PRODUCT_PACKAGES += \
+#     mokee.powershare@1.0-service.xiaomi_kona
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
@@ -214,3 +223,6 @@ PRODUCT_PACKAGES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml

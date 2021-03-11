@@ -37,7 +37,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <name>vendor.mokee.biometrics.fingerprint.inscreen</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -46,7 +46,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.powershare</name>
+        <name>vendor.mokee.powershare</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
