@@ -91,7 +91,7 @@ public class RefreshRateSettingsActivity extends Activity {
         String[] refreshRateValues = getResources().getStringArray(R.array.device_refresh_rates_val);
         String[] refreshRateSummaries = getResources().getStringArray(R.array.device_refresh_rates_summary);
         List<RefreshRate> list = new ArrayList<>();
-        float currentRefreshRate = Settings.System.getFloat(getContentResolver(), Settings.System.MIN_REFRESH_RATE, 0f);
+        float currentRefreshRate = Settings.System.getFloat(getContentResolver(), Settings.System.PEAK_REFRESH_RATE, 90f);
         for (int i = 0; i < refreshRates.length; i++) {
             RefreshRate refreshRate = new RefreshRate();
             try {
@@ -120,6 +120,7 @@ public class RefreshRateSettingsActivity extends Activity {
     private void setRefreshRate(float value) {
         try {
             Settings.System.putFloat(getContentResolver(), Settings.System.MIN_REFRESH_RATE, value);
+            Settings.System.putFloat(getContentResolver(), Settings.System.PEAK_REFRESH_RATE, value);
         } catch (Throwable t) {
             t.printStackTrace();
         }
