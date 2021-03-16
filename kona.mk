@@ -155,15 +155,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-# Overlays
+# Overlays - mokee specific
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-mokee
 
-# Overlays - override vendor ones
+# Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResTarget \
     XiaomiFrameworks \
     XiaomiSystemUI
+
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    FrameworksResTarget \
+    DevicesOverlay \
+    DevicesAndroidOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -195,6 +201,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.safailnet.rc
+
+# SoterService
+PRODUCT_PACKAGES += \
+    SoterService
 
 # Telephony
 PRODUCT_PACKAGES += \

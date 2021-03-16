@@ -72,7 +72,7 @@ telephony.lteOnCdmaDevice=1
 persist.rcs.supported=1
 
 # Screen Density
-ro.sf.lcd_density=420
+ro.sf.lcd_density=440
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true

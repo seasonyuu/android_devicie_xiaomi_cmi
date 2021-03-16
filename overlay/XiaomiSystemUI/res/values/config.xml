@@ -22,9 +22,6 @@
 <resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
-
-    <!-- Allow devices to use unordinary cutout overlays -->
-    <bool name="config_customCutout">true</bool>
     
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
@@ -38,7 +35,5 @@
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">159px</dimen>
-    
-    <!-- Color of the FOD view -->
-    <color name="config_fodColor">#ffffff</color>
+
 </resources>

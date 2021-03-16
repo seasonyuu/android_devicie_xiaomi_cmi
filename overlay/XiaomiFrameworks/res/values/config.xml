@@ -70,16 +70,15 @@
 
     <!-- Is the device capable of hot swapping an ICC Card -->
      <bool name="config_hotswapCapable">true</bool>
-
-    <!-- Should the pinner service pin the Camera application? -->
-     <bool name="config_pinnerCameraApp">true</bool>
-
+     
     <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">40dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="status_bar_height_portrait">90px</dimen>
+
+    <!-- Height of the status bar in landscape -->
+    <dimen name="status_bar_height_landscape">24dp</dimen>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
@@ -96,7 +95,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -903,0 H -1080 V 90 H -903 V 0 Z@right</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -376 58 A 32 32 0 0 1 -438 58 A 32 32 0 0 1 -376 58 Z M -438,0 L -376,0 Z M -540,0 L -540,90 Z</string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
@@ -105,7 +104,7 @@
          config_mainBuiltInDisplayCutout
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M -903,0 H -1080 V 90 H -903 V 0 Z@right
+        M -376 58 A 32 32 0 0 1 -438 58 A 32 32 0 0 1 -376 58 Z M -438,0 L -376,0 Z M -540,0 L -540,90 Z
     </string>
 
     <!-- Default list of files pinned by the Pinner Service -->
@@ -983,7 +982,7 @@
 
     <!-- The default refresh rate. CMI manages this using the peak refresh rate setting, so set
          this value to 0 so it has no effect. -->
-    <integer name="config_defaultRefreshRate">0</integer>
+    <integer name="config_defaultRefreshRate">90</integer>
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
@@ -1070,5 +1069,11 @@
     <string name="db_default_journal_mode">MEMORY</string>
     <string name="db_default_sync_mode">OFF</string>
     <string name="db_wal_sync_mode">OFF</string>
+    
+    <!-- Controls the navigation bar interaction mode:
+         0: 3 button mode (back, home, overview buttons)
+         1: 2 button mode (back, home buttons + swipe up for overview)
+         2: gestures only for back, home and overview -->
+    <integer name="config_navBarInteractionMode">2</integer>
 
 </resources>
