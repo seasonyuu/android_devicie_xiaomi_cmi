@@ -32,15 +32,9 @@ $(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 PRODUCT_NAME := mokee_cmi
 PRODUCT_DEVICE := cmi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 10 Pro
+PRODUCT_MODEL := Mi 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DISC="redfin-user 11 RQ1A.210105.003 7005429 release-keys"
-
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+BUILD_FINGERPRINT := "Xiaomi/cmi/cmi:11/RKQ1.200826.002/V12.2.2.0.RJACNXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
