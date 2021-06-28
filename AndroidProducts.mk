@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_cmi.mk
+    $(LOCAL_DIR)/mokee_cmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_cmi-user \
-    p404_cmi-userdebug \
-    p404_cmi-eng
+    mokee_cmi-user \
+    mokee_cmi-userdebug \
+    mokee_cmi-eng

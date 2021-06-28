@@ -1,10 +1,10 @@
 <manifest version="1.0" type="device">
     <hal format="hidl">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <name>vendor.mokee.powershare</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFingerprintInscreen</name>
+            <name>IPowerShare</name>
             <instance>default</instance>
         </interface>
     </hal>

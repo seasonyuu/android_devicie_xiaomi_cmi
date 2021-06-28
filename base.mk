@@ -77,7 +77,7 @@ DRM += android.hardware.drm@1.3-service.clearkey
 FASTBOOTD += fastbootd
 
 #FOD
-FOD := vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+FOD := vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
 
 #framework detect libs
 PRODUCT_PACKAGES += libvndfwk_detect_jni.qti
@@ -178,7 +178,7 @@ NFC += Tag
 NFC += vendor.nxp.hardware.nfc@2.0-service
 
 #POWERSHARE
-POWERSHARE := vendor.lineage.powershare@1.0-service.xiaomi_kona
+POWERSHARE := vendor.mokee.powershare@1.0-service.xiaomi_kona
 
 #QMI
 QMI := libjson
@@ -209,6 +209,10 @@ TELEPHONY_EXT_JAR += telephony-ext
 
 #THERMAL_HAL
 THERMAL_HAL := android.hardware.thermal@2.0-service.qti
+
+#VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager 
 
 #WIFI
 WIFI += android.hardware.wifi@1.0-service

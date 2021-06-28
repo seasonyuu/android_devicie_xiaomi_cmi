@@ -60,7 +60,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/xiaomi/cmi/device/overlay \
     device/xiaomi/cmi/product/overlay \
     device/xiaomi/cmi/overlay \
-    device/xiaomi/cmi/overlay-404
+    device/xiaomi/cmi/overlay-mokee
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
