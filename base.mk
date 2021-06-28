@@ -49,7 +49,7 @@ AUDIO_HAL += libqcomvoiceprocessing
 #BLUETOOTH_HAL
 BLUETOOTH_HAL += android.hardware.bluetooth.audio@2.0-impl
 BLUETOOTH_HAL += audio.bluetooth.default
-BLUETOOTH_HAL += libbluetooth_qti
+# BLUETOOTH_HAL += libbluetooth_qti
 BLUETOOTH_HAL += libbthost_if
 BLUETOOTH_HAL += libldacBT_dec
 BLUETOOTH_HAL += vendor.qti.hardware.bluetooth_audio@2.0.vendor

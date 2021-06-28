@@ -2,7 +2,7 @@
 persist.bt.enableAptXHD=true
 persist.service.btui.use_aptx=1
 persist.vendor.bt.a2dp.aac_whitelist=false
-ro.bluetooth.library_name=libbluetooth_qti.so
+# ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Blur
 ro.sf.blurs_are_expensive=1
