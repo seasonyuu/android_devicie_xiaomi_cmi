@@ -63,6 +63,7 @@ CAMERA += libgui_vendor
 CAMERA += vendor.qti.hardware.camera.device@3.5.vendor
 CAMERA += vendor.qti.hardware.camera.postproc@1.0.vendor
 CAMERA += libstdc++.vendor
+CAMERA += Snap
 
 #DATA_OS
 DATA_OS := librmnetctl
