@@ -42,7 +42,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <integer name="config_screenBrightnessDoze">17</integer>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
     <bool name="config_setColorTransformAccelerated">true</bool>
-
-    <!-- The name of the package that will hold the dialer role by default. -->
-    <string name="config_defaultDialer" translatable="false">org.codeaurora.dialer</string>
 </resources>
