@@ -79,7 +79,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.a2dp_offload.disabled=false \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
@@ -287,11 +287,6 @@ PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8250/audio/configs/kona/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     hardware/qcom-caf/sm8250/audio/configs/kona/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     hardware/qcom-caf/sm8250/audio/configs/kona/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
-
-#Bluetooth
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8250/audio/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
 
 #Display
 $(call inherit-product, $(LOCAL_PATH)/kona/display/display.mk)
