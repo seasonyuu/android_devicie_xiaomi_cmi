@@ -310,6 +310,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/kona/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.2-service-qti
+
 #WiFi
 PRODUCT_COPY_FILES += \
     device/xiaomi/cmi/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
