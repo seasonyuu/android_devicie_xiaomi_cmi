@@ -55,7 +55,7 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
-function remove_label() {
+function blob_fixup() {
     case "${1}" in
         vendor/etc/init/init.mi_thermald.rc)
             sed -i "/seclabel/d" "${2}"
