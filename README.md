@@ -1,4 +1,4 @@
-Copyright (C) 2020-2021 Project 404
+Copyright (C) 2021 The MoKee Open Source Project
 
 Device configuration for Xiaomi MI 10 Pro
 =========================================
